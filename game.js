@@ -16,9 +16,10 @@ const formattedDate = `${dateDay}-${dateMonth}-${dateYear}`;
 const startGame = () => {
     startButton.remove();
     insertDate();
+    insertGrid();
 }
 const insertDate = () => {
-    dateContainer.style.display = 'block';
+    dateContainer.style.display = 'flex';
     dateText.innerHTML = formattedDate;
 
 }
